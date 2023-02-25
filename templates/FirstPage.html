@@ -1,0 +1,53 @@
+<html>
+    <head>
+      <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+      <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+      <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    </head>
+
+  <body>
+    
+    <div>
+        <center><h1>Smart Recruitment Systems</h1></center>
+    </div>
+
+    <label for="myfile">Select a file:</label>
+    <input type="file" id="myfile" name="myfile">
+    <br>
+    <br>
+    <button type="button" class="btn btn-primary">Geneate FeedBack</button>
+    <br>
+    <p>Your Name : 
+        <span id = 'name'></span>
+    </p>
+    <br>
+    <p>Your ID : 
+        <span id = 'id'></span>
+    </p>
+    <br>
+    <p>Your Email : 
+        <span id = 'email'></span>
+    </p>
+
+    <py-script>
+      import random
+     
+      def generateName():
+        return "Abhiroop Mukherjee" 
+      def generateId():
+        return "1"
+      def genrateEmail():
+        return "abhiroopmukherjee1@gmail.com"
+      pyscript.write('name',generateName())
+      pyscript.write('id',generateId())
+      pyscript.write('email',genrateEmail())
+    </py-script>
+  </body>
+</html>
